@@ -3,12 +3,12 @@ package kadai_021;
 import java.util.HashMap;
 import java.util.Map;
 
-
 public class Dictionary_Chapter21 {
+    private Map<String, String> fruit;
 
-	public static Map<String, String> createDictionary() {
-        Map<String, String> fruit = new HashMap<>();
-
+    // コンストラクタで辞書を初期化
+    public Dictionary_Chapter21() {
+        fruit = new HashMap<>();
         fruit.put("apple", "りんご");
         fruit.put("peach", "もも");
         fruit.put("banana", "バナナ");
@@ -19,8 +19,10 @@ public class Dictionary_Chapter21 {
         fruit.put("grape", "ぶどう");
         fruit.put("muscat", "マスカット");
         fruit.put("cherry", "さくらんぼ");
-
-        return fruit;
     }
 
+    // 辞書を返すメソッド
+    public Map<String, String> getFruitDictionary() {
+        return fruit;
+    }
 }
